@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Details - Loops & Twists</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      color: #ff4f8b;
+      text-align: center;
+    }
+    form {
+      max-width: 500px;
+      margin: 30px auto;
+      background: #ffe2ed;
+      padding: 20px;
+      border-radius: 12px;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #ff4f8b;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Order Details 🧶</h1>
+
+  <form id="orderForm">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="mobile">Mobile Number</label>
+    <input type="tel" id="mobile" required>
+
+    <label for="address">Address</label>
+    <textarea id="address" rows="4" required></textarea>
+
+    <label for="payment">Payment Mode</label>
+    <select id="payment" required>
+      <option value="">--Select Payment Mode--</option>
+      <option value="COD">Cash on Delivery</option>
+      <option value="UPI">UPI</option>
+      <option value="Card">Credit/Debit Card</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("orderForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const mobile = document.getElementById("mobile").value;
+      const address = document.getElementById("address").value;
+      const payment = document.getElementById("payment").value;
+
+      if (!name || !mobile || !address || !payment) {
+        alert("Please fill in all fields!");
+        return;
+      }
+
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      if (cart.length === 0) {
+        alert("Your cart is empty. Cannot place order.");
+        return;
+      }
+
+      const orderDetails = {
+        name,
+        mobile,
+        address,
+        payment,
+        items: cart,
+        total: cart.reduce((sum, item) => sum + item.price, 0)
+      };
+
+      // Optional: Send to email using EmailJS or API here
+
+      alert("✅ Order placed successfully!\nThank you for shopping with Loops & Twists.");
+      localStorage.removeItem("cart");
+      window.location.href = "index.html";
+    });
+  </script>
+
+</body>
+</html>

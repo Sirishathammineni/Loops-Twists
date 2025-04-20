@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="./assets/cro logo.png" width="100"  height="70"alt="">
+        </a>
+        <div class="nav-add">
+            <i class="fa-solid fa-location-pin"></i>
+        <div>
+            <p>Deliver to <br>Karnataka</p>
+        </div>
+        </div>
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p>All</p>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search products">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="nav-lang">
+            <i class="fa-solid fa-language"></i>
+            <p>IND</p>
+            <i class="fa-solid fa-caret-down"></i>
+
+        </div>
+       <div class="nav-text">
+           <p>
+               Hello,Sign-in
+           </p>
+           <h1>Account & Lists <i class="fa-solid fa-caret-down"></i> </h1>
+       </div>
+       <div class="nav-text">
+        <p>
+           Return
+        </p>
+        <h1>& orders  </h1>
+    </div>
+    <div class="nav-cart"> <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> </a><h4>cart</h4></div>
+
+    </nav>
+    <div class="nav-bottom">
+        <div>
+            <i class="fa-solid fa-bars"></i>
+            <p>All</p>
+        </div>
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registration</p>
+        <p>Sell</p>
+        <p>Gift cards</p>
+
+    </div>
+    <div class="box-row">
+        <div class="box-col">
+            <h3>Free keychains on purchasing cardigans</h3>
+            <img src="./assets/box1.jpg" height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Buy Tops on flat 50% off</h3>
+            <img src="./assets/col2.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Buy a bunch of 10 Roses and get 1 Free</h3>
+            <img src="./assets/box3.jpg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Buy Combo of 2 Dolls and get 25% off</h3>
+            <img src="./assets/box4.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Buy cardigan on flat 10% off</h3>
+            <img src="./assets/box5.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Check out Arrival of new Bags</h3>
+            <img src="./assets/box6.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Want to check new hair Accessories? </h3>
+            <img src="./assets/box7.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>look out customised wall-hangings here </h3>
+            <img src="./assets/box8.jpeg"  height="250px" alt="">
+            <a href="/">Shop more</a>
+        </div>
+    </div>
+
+    <div class="product-slider1">
+        <h2>Best Sales in Tops</h2>
+        <div class="products1">
+            <img src="./assets/p1.jpeg" alt="">
+            <img src="./assets/p2.jpeg" alt="">
+            <img src="./assets/p3.jpeg" alt="">
+            <img src="./assets/p4.jpeg" alt="">
+            <img src="./assets/p5.jpeg" alt="">
+            <img src="./assets/p6.jpeg" alt="">
+            <img src="./assets/p7.jpeg" alt="">
+            <img src="./assets/p8.jpeg" alt="">
+            <img src="./assets/p9.jpeg" alt="">
+            <img src="./assets/p10.jpeg" alt="">
+        </div>
+    </div>
+    <div class="product-slider2">
+        <h2>Trendy Bags</h2>
+        <div class="products2">
+            <img src="./assets/pr1.jpeg" alt="">
+            <img src="./assets/pr2.jpeg" alt="">
+            <img src="./assets/pr3.jpeg" alt="">
+            <img src="./assets/pr4.jpeg" alt="">
+            <img src="./assets/pr5.jpeg" alt="">
+            <img src="./assets/pr6.jpeg" alt="">
+            <img src="./assets/pr7.jpeg" alt="">
+            <img src="./assets/pr8.jpeg" alt="">
+            <img src="./assets/pr9.jpeg" alt="">
+            <img src="./assets/pr10.jpeg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="product-slider-with-price">
+        <h2>check out flowers</h2>
+        <div class="products1">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/red rose.webp" alt="">
+                </div>
+                    <h3 class="product-title" > Red Rose</h3>
+                    <p class="product-price" >Rs.55</p>
+                   <button class="add-to-cart-btn" onclick="addtocart('Red rose',55)">Add to cart</button>
+                <h5>A vibrant red crochet rose perfect for gifts and décor..</h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/black rose.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Black Rose</h3>
+                <p  class="product-price">Rs.60</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Black rose',60)">Add to cart</button>
+               <h5>A unique black rose made from yarn, great for elegant settings.
+
+               </h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/blue tulip.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Blue tulip</h3>
+                <p class="product-price">Rs.40</p>
+                <button class="add-to-cart-btn"  onclick="addtocart('Blue Tulip',40)">Add to cart</button>
+                <h5>Soft blue tulips crafted delicately for charming decoration.
+
+                </h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/daisy.jpeg" alt="">
+                </div>
+                <h3 class="product-title" > Daisy</h3>
+                <p class="product-price" >Rs.30</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Daisy',30)">Add to cart</button>
+                <h5> A sweet bunch of daisies ideal for thoughtful gifting.</h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/pink rose.webp" alt="">
+                </div>
+                <h3 class="product-title"> Pink Rose</h3>
+                <p  class="product-price">Rs.55</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Pink rose',55)">Add to cart</button>
+                <h5> Lovely pink rose bouquet tied with a ribbon, handmade with care.</h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/pink tulip.jpg" alt="">
+                </div>
+                <h3 class="product-title">Pink Tulip</h3>
+                <p class="product-price">Rs.45</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Pink Tulip',5)">Add to cart</button>
+                <h5> Bright pink tulip bunch adding a soft touch to any room.</h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/sunf.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Sunflower</h3>
+                <p class="product-price">Rs.50</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('Sunflower',50)">Add to cart
+               </button>
+                <h5>Sunny and cheerful, this crochet sunflower brightens your day.
+
+                </h5>
+            </div>
+        </div>
+
+    </div>
+    <div class="product-slider-with-price">
+        <h2>check out Bags</h2>
+        <div class="products1">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/bag1.jpeg" alt="">
+                </div>
+                    <h3 class="product-title" > Grey Granny square bag</h3>
+                    <p class="product-price" >Rs.500</p>
+                   <button class="add-to-cart-btn" onclick="addtocart(' Grey Granny square bag',500)">Add to cart</button>
+                
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/bag2.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Sunflower Purse</h3>
+                <p  class="product-price">Rs.100</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Sunflower Purse',100)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/bag3.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Carry bag</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"  onclick="addtocart(' Carry bag',500)">Add to cart</button>
+                
+
+                </h5>
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/bag4.jpg" alt="">
+                </div>
+                <h3 class="product-title" > Hand bag</h3>
+                <p class="product-price" >Rs.300</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Hand bag',300)">Add to cart</button>
+            
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/pr6.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Square Bag</h3>
+                <p  class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Square Bag',500)">Add to cart</button>
+              
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/pr4.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Brand-new Hand bag</h3>
+                <p class="product-price">Rs.800</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Brand-new Hand bag',800)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/pr9.jpeg "alt="">
+                </div>
+                <h3 class="product-title"> white hearts</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart(' white hearts',500)">Add to cart
+               </button>
+               
+
+                
+            </div>
+        </div>
+
+    </div>
+    <div class="product-slider-with-price">
+        <h2>check out our Brand-new Tops</h2>
+        <div class="products1">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/top1.jpeg" alt="">
+                </div>
+                    <h3 class="product-title" > Red Top</h3>
+                    <p class="product-price" >Rs.550</p>
+                   <button class="add-to-cart-btn" onclick="addtocart('Red Top',550)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/p4.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> White Top</h3>
+                <p  class="product-price">Rs.600</p>
+                <button class="add-to-cart-btn" onclick="addtocart('White Top',600)">Add to cart</button>
+             
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/top3.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Daisy Square</h3>
+                <p class="product-price">Rs.400</p>
+                <button class="add-to-cart-btn"  onclick="addtocart('Daisy Square',400)">Add to cart</button>
+              
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/p6.jpeg" alt="">
+                </div>
+                <h3 class="product-title" >Crochet top</h3>
+                <p class="product-price" >Rs.700</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Crochet top',700)">Add to cart</button>
+              
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/top5.jpeg" alt="">
+                </div>
+                <h3 class="product-title">whity</h3>
+                <p  class="product-price">Rs.550</p>
+                <button class="add-to-cart-btn" onclick="addtocart('whity',550)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/p2.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Full Neck cardigan</h3>
+                <p class="product-price">Rs.450</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Full Neck cardigan',450)">Add to cart</button>
+             
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/p5.jpeg" alt="">
+                </div>
+                <h3 class="product-title">V-Neck top</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('V-Neck top',500)">Add to cart
+               </button>
+               
+            </div>
+        </div>
+
+    </div>
+    <div class="product-slider-with-price">
+        <h2>want to buy keychains and dolls</h2>
+        <div class="products1">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/key1.jpeg" alt="">
+                </div>
+                    <h3 class="product-title" > Flowers Key-chain</h3>
+                    <p class="product-price" >Rs.150</p>
+                   <button class="add-to-cart-btn" onclick="addtocart(' Flowers Key-chain',150)">Add to cart</button>
+             
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/key2.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Avacado</h3>
+                <p  class="product-price">Rs.100</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Avacado',100)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/key3.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Red heart</h3>
+                <p class="product-price">Rs.100</p>
+                <button class="add-to-cart-btn"  onclick="addtocart('Red heart',100)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/key4.jpeg" alt="">
+                </div>
+                <h3 class="product-title" > Kitten</h3>
+                <p class="product-price" >Rs.100</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Kitten',100)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/key5.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Butterfly</h3>
+                <p  class="product-price">Rs.50</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Butterfly',50)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/bee.jpeg "alt="">
+                </div>
+                <h3 class="product-title">Beee</h3>
+                <p class="product-price">Rs.150</p>
+                <button class="add-to-cart-btn" onclick="addtocart('Beee',150)">Add to cart</button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/doll.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> A doll</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('A Doll',500)">Add to cart
+               </button>
+
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/elephant.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Baby Elephant</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('Baby elephant',500)">Add to cart
+               </button>
+
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/giraf.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Giraff</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('Giraff',500)">Add to cart
+               </button>
+               
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/jelly.jpeg" alt="">
+                </div>
+                <h3 class="product-title"> Octo</h3>
+                <p class="product-price">Rs.500</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('Octo',500)">Add to cart
+               </button>
+
+            </div>
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="./assets/turtle.jpeg" alt="">
+                </div>
+                <h3 class="product-title">Turtle</h3>
+                <p class="product-price">Rs.250</p>
+                <button class="add-to-cart-btn"
+                 onclick="addtocart('Turtle',250)">Add to cart
+               </button>
+
+            </div>
+        </div>
+       
+
+    </div>
+    <footer style="background-color: #f3f3f3; padding: 40px 20px; font-family: 'Segoe UI', sans-serif; color: #333;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1200px; margin: auto;">
+          
+          <!-- Column 1: Know Us -->
+          <div>
+            <h4>Get to Know Us</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li><a href="#" style="text-decoration: none; color: #555;">About Loops & Twists</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Our Story</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Meet the Maker</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 2: Help -->
+          <div>
+            <h4>Let Us Help You</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li><a href="#" style="text-decoration: none; color: #555;">Your Orders</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Shipping Info</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Return Policy</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Contact Us</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 3: Connect -->
+          <div>
+            <h4>Connect with Us</h4>
+            <ul style="list-style: none; padding: 0;">
+              <li><a href="#" style="text-decoration: none; color: #555;">Instagram</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Pinterest</a></li>
+              <li><a href="#" style="text-decoration: none; color: #555;">Facebook</a></li>
+            </ul>
+          </div>
+      
+          <!-- Column 4: Newsletter -->
+          <div>
+            <h4>Stay in the Loop</h4>
+            <p>Sign up for cozy updates and exclusive offers 🧵</p>
+            <input type="email" placeholder="Your email" style="padding: 8px; width: 100%; margin-top: 8px;">
+<button style="margin-top: 10px; padding: 8px 16px; background-color: #fa9fb0; border: none; color: white;">Subscribe</button>
+
+          </div>
+        </div>
+      
+        <!-- Bottom Bar -->
+        <div style="text-align: center; margin-top: 30px; font-size: 14px; color: #888;">
+          <p>© 2025 Loops & Twists. Handmade with love in India 🧶</p>
+          <p><a href="#" style="text-decoration: none; color: #888;">Privacy Policy</a> | <a href="#" style="text-decoration: none; color: #888;">Terms of Service</a></p>
+        </div>
+      </footer>
+      
+      <script scr="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart - Loops & Twists</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background: #fff4fa;
+    }
+    h1 {
+      text-align: center;
+      color: #ff4f8b;
+    }
+    #cart-items {
+      margin-top: 30px;
+    }
+    .cart-item {
+      background: #ffe2ed;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cart-item button {
+      background: #ff4f8b;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .cart-controls {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cart-controls button {
+      margin: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .clear-btn {
+      background-color: #ccc;
+    }
+    .order-btn {
+      background-color: #ff4f8b;
+      color: white;
+    }
+    #total {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 15px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Cart 🧺</h1>
+
+  <div id="cart-items"></div>
+  <h2 id="total">Total: ₹0</h2>
+
+  <div class="cart-controls">
+    <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+    <button class="order-btn" onclick="goToOrder()">Proceed to Order</button>
+  </div>
+
+  <script>
+    function displayCartItems() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartDiv = document.getElementById("cart-items");
+      const totalDiv = document.getElementById("total");
+      cartDiv.innerHTML = "";
+
+      if (cart.length === 0) {
+        cartDiv.innerHTML = "<p>Your cart is empty!</p>";
+        totalDiv.innerText = "Total: ₹0";
+        return;
+      }
+
+      let total = 0;
+      cart.forEach((item, index) => {
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("cart-item");
+        itemDiv.innerHTML = `
+          <span>${item.name} - ₹${item.price}</span>
+          <button onclick="removeFromCart(${index})">Remove</button>
+        `;
+        cartDiv.appendChild(itemDiv);
+        total += item.price;
+      });
+
+      totalDiv.innerText = "Total: ₹" + total;
+    }
+
+    function removeFromCart(index) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      displayCartItems();
+    }
+
+    function clearCart() {
+      localStorage.removeItem("cart");
+      displayCartItems();
+    }
+
+    function goToOrder() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      if (cart.length === 0) {
+        alert("Cart is empty!");
+        return;
+      }
+      window.location.href = "order.html";
+    }
+
+    displayCartItems();
+  </script>
+</body>
+</html>
